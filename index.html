@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh B — DevOps Portfolio</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1 { color: #1a1a1a; }
+        h2 { color: #444; margin-top: 40px; }
+        a { color: #0066cc; }
+        .project {
+            border-left: 3px solid #0066cc;
+            padding-left: 16px;
+            margin: 24px 0;
+        }
+        .tags {
+            font-size: 0.85em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Josh B</h1>
+    <p>DevOps engineer in training. I learn by building real infrastructure 
+    and documenting what I find along the way.</p>
+
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h3>Homelab Kubernetes Cluster</h3>
+        <p>Three node k3s cluster running on Proxmox VMs with bare metal 
+        load balancing (MetalLB), Traefik ingress, Prometheus/Grafana monitoring, 
+        and a full CI/CD pipeline via GitHub Actions.</p>
+        <p class="tags">k3s · Kubernetes · MetalLB · Traefik · Ansible · Terraform · 
+        GitHub Actions · Prometheus · Grafana</p>
+        <a href="https://github.com/joshb455/homelab-k8s">View on GitHub →</a>
+    </div>
+
+    <div class="project">
+        <h3>dino-truths-game</h3>
+        <p>Flask web app using the Anthropic API to generate two truths and 
+        one lie about dinosaur species. Deployed on Kubernetes with automated 
+        CI/CD — every git push triggers a Docker build and rolling cluster update.</p>
+        <p class="tags">Python · Flask · Docker · Kubernetes · GitHub Actions</p>
+        <a href="https://github.com/joshb455/dino-truths-game">View on GitHub →</a>
+    </div>
+
+    <div class="project">
+        <h3>Infrastructure Automation</h3>
+        <p>Ansible role-based playbooks for k3s worker node provisioning, 
+        security hardening, and application deployment. Terraform manages 
+        VM lifecycle on Proxmox using Cloud-Init templates for fast reproducible 
+        provisioning.</p>
+        <p class="tags">Ansible · Terraform · Cloud-Init · Proxmox</p>
+        <a href="https://github.com/joshb455/homelab-ansible">View on GitHub →</a>
+    </div>
+
+    <h2>Skills</h2>
+    <p>Kubernetes · Docker · Ansible · Terraform · GitHub Actions · 
+    Linux · Python · AWS (Lambda, EC2, S3, IAM, API Gateway) · 
+    Prometheus · Grafana · Nginx · Git</p>
+
+    <h2>Contact</h2>
+    <p><a href="https://github.com/joshb455">GitHub</a></p>
+</body>
+</html>
